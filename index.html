@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ShiftWest development Inc.</title>
+    <meta name="description" content="Mobile/web app development and consultancy services in Canada and the United Kingdom">
+    <meta name="author" content="ShiftWest Development Inc.">
+
+    <meta property="og:title" content="ShiftWest Development Inc.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shfwst.dev">
+    <meta property="og:description" content="Mobile, web, and full-stack development/consultancy services.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    
+    <style type="text/css">
+        body {
+            color: #abb2bf;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizelegibility;
+            font-family:  'Fira Code', monospace;
+            background-color: #282c34;
+            margin: 0;
+        }
+        header {
+            margin-top: 0rem;
+            display: flex;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            background-color: #1D2026;
+        }
+
+        h1, h2, h3 {
+            font-family: "DM Serif Display";
+            color: #fff;
+        }
+        h1 {
+            font-size: 10rem;
+            display: flex;
+            flex:1;
+            justify-content: center;
+            margin: 0;
+        }
+        h1::before {
+            content: '{';
+            color: rgb(95, 61, 200);
+            padding: 0.1rem;
+        }
+        h1::after {
+            content: '}';
+            color: rgb(95, 61, 200);
+            padding: 0.1rem;
+        }
+
+        a.contact {
+            padding: 0.5rem 3.5rem;
+            position: relative;
+            user-select: none;
+            outline: none;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            cursor: pointer;
+            min-width: 5rem;
+            padding: 0.5rem 2rem;
+            box-sizing: border-box;
+            /*font-family: proxima-nova, sans-serif;*/
+            font-weight: 700;
+            margin: 0px; 
+            border-radius: 0.4rem;
+            transition: color 200ms ease-out 0s, background 200ms ease-out 0s, border-color 200ms ease-out 0s, box-shadow 200ms ease-out 0s, transform 200ms ease-out 0s;
+            color: rgb(255, 255, 255);
+            background: rgb(95, 61, 200);
+            border: none;
+            min-height: 5.6rem;
+            font-size: 2rem;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        aside {
+            margin-top:2rem;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        section {
+            padding: 0.25rem;
+            border-radius: 4px;
+            background:rgba(255, 255, 255, 0.06);
+            padding: 1.5rem;
+            margin: 1rem;
+        }
+
+        section h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        ul {
+            padding: 0 1rem;
+        }
+
+        footer {
+            font-size: 0.7rem;
+            position: fixed;
+            bottom: 0;
+            margin: 0 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>shftwst</h1>
+    </header>
+    <main>
+        <p>Mobile/web app development and consultancy services in Canada and the United Kingdom</p>
+        <nav>
+            <a class="contact" href="mailto:hello@shftwst.dev?subject=Hello!">Say: "Hello!" 👋👋👋</a>
+        </nav> 
+        <aside>
+            <section>
+                <h3>Development services</h3>
+                <ul>
+                    <li>Mobile/web application development</li>
+                    <li>Full stack development</li>
+                    <li>DevOps</li>
+                    <li>Testing</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Consultancy services</h3>
+                <ul>
+                    <li>Client side architecture</li>
+                    <li>Backend-for-frontend API architecture</li>
+                    <li>GraphQL architecture</li>
+                    <li>Build/release pipelining</li>
+                    <li>Front-end tooling</li>
+                    <li>Code reviews</li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; ShiftWest Development Inc.</p>
+    </footer>
+</body>
+</html>
