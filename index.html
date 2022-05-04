@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ShiftWest development Inc.</title>
+    <title>ShiftWest Development Inc.</title>
     <meta name="description" content="Mobile/web app development and consultancy services in Canada and the United Kingdom">
     <meta name="author" content="ShiftWest Development Inc.">
 
     <meta property="og:title" content="ShiftWest Development Inc.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shfwst.dev">
+    <meta property="og:url" content="https://www.shfwst.dev">
     <meta property="og:description" content="Mobile, web, and full-stack development/consultancy services.">
     <meta property="og:image" content="image.png">
 
@@ -41,8 +41,8 @@
             background-color: #1D2026;
         }
 
-        h1, h2, h3 {
-            font-family: "DM Serif Display";
+        h1, h2 {
+            font-family: "DM Serif Display", serif;
             color: #fff;
         }
         h1 {
@@ -62,10 +62,15 @@
             color: rgb(95, 61, 200);
             padding: 0.1rem;
         }
-
+        .shft {
+            color: #fff;
+        }
+        .wst {
+            color: lightslategray;
+        }
+        
         a.contact {
             padding: 0.5rem 3.5rem;
-            position: relative;
             user-select: none;
             outline: none;
             display: inline-flex;
@@ -77,7 +82,6 @@
             min-width: 5rem;
             padding: 0.5rem 2rem;
             box-sizing: border-box;
-            /*font-family: proxima-nova, sans-serif;*/
             font-weight: 700;
             margin: 0px; 
             border-radius: 0.4rem;
@@ -91,10 +95,26 @@
             text-transform: capitalize;
         }
 
+        a.contact:hover {
+            background: rgb(80, 51, 170);
+        }
+
+        .property {
+            color: cyan;
+        }
+
+        .syntax {
+            color: darksalmon;
+        }
+
+        .emoji {
+            
+        }
+
         nav {
             display: flex;
             justify-content: center;
-            margin: 2rem;
+            margin: 2rem 0;
         }
 
         main {
@@ -104,8 +124,12 @@
             padding: 2rem;
         }
 
+        main p {
+            text-align: center;
+        }
+
         aside {
-            margin-top:2rem;
+            margin-top:0rem;
             display: flex;
             flex: 1;
             flex-direction: row;
@@ -113,44 +137,101 @@
         }
 
         section {
-            padding: 0.25rem;
             border-radius: 4px;
             background:rgba(255, 255, 255, 0.06);
-            padding: 1.5rem;
+            padding: 0;
             margin: 1rem;
+            box-shadow: rgb(255 255 255 / 1%) 0rem 3rem 5rem -1rem;
+            transition: color 200ms ease-out 0s, background 200ms ease-out 0s, border-color 200ms ease-out 0s, box-shadow 200ms ease-out 0s, transform 200ms ease-out 0s;
+            background: #1D2026;
+            border: 1px solid #333;
         }
 
-        section h3 {
+        section:hover {
+            box-shadow: rgb(255 255 255 / 3%) 0rem 3rem 5rem -1rem;
+            transform: scale(1.01) translateY(-0.7rem);
+        }
+
+        section h2 {
             text-align: center;
-            margin-top: 0;
+            margin: 0;
+            background:rgb(255 255 255 / 3%);
+            padding: 0.5rem;
+            border-bottom: 1px solid #333;
+            position: relative;
+            color: #abb2bf;
+            font-size: 1rem;
+        }
+
+        section h2::before {
+            content: '\2022  \2022  \2022 ';
+            font-size: 2rem;
+            line-height: 1rem;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: rgb(255 255 255 / 5%);
         }
 
         ul {
-            padding: 0 1rem;
+            padding: 1rem 0;
+            margin: 0 2rem;
+        }
+
+        li::marker {
+            color: yellowgreen;
         }
 
         footer {
             font-size: 0.7rem;
-            position: fixed;
             bottom: 0;
             margin: 0 1rem;
+            text-align: right;
         }
 
+        @media only screen and (max-width: 700px) {
+            h1 {
+                font-size: 6rem;
+            }
+
+            main {
+                padding: 2rem 5rem;
+            }
+
+            aside {
+                flex-direction: column;
+            }
+
+            .emoji {
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: 525px) {
+            a.contact {
+                font-size: 1rem;
+            }
+            .emoji {
+                
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>shftwst</h1>
+        <h1><span class="shft">shft</span><span class="wst">wst</span></h1>
     </header>
     <main>
         <p>Mobile/web app development and consultancy services in Canada and the United Kingdom</p>
         <nav>
-            <a class="contact" href="mailto:hello@shftwst.dev?subject=Hello!">Say: "Hello!" 👋👋👋</a>
+            <a class="contact" href="mailto:hello@shftwst.dev?subject=Hello!">
+                <span class="property">Say</span><span class="syntax">:</span> "Hello!" <span class="emoji">👋👋👋</span>
+            </a>
         </nav> 
         <aside>
             <section>
-                <h3>Development services</h3>
+                <h2>Development services</h2>
                 <ul>
                     <li>Mobile/web application development</li>
                     <li>Full stack development</li>
@@ -159,7 +240,7 @@
                 </ul>
             </section>
             <section>
-                <h3>Consultancy services</h3>
+                <h2>Consultancy services</h2>
                 <ul>
                     <li>Client side architecture</li>
                     <li>Backend-for-frontend API architecture</li>
@@ -172,7 +253,7 @@
         </aside>
     </main>
     <footer>
-        <p>&copy; ShiftWest Development Inc.</p>
+        <p>&copy; ShiftWest Development Inc. ON, Canada</p>
     </footer>
 </body>
 </html>
